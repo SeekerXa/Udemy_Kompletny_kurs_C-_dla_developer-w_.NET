@@ -1,0 +1,15 @@
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\bin\Debug\net6.0\NewProject.exe
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\bin\Debug\net6.0\NewProject.deps.json
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\bin\Debug\net6.0\NewProject.runtimeconfig.json
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\bin\Debug\net6.0\NewProject.dll
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\bin\Debug\net6.0\NewProject.pdb
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\obj\Debug\net6.0\NewProject.csproj.AssemblyReference.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\obj\Debug\net6.0\NewProject.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\obj\Debug\net6.0\NewProject.AssemblyInfoInputs.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\obj\Debug\net6.0\NewProject.AssemblyInfo.cs
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\obj\Debug\net6.0\NewProject.csproj.CoreCompileInputs.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\obj\Debug\net6.0\NewProject.dll
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\obj\Debug\net6.0\refint\NewProject.dll
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\obj\Debug\net6.0\NewProject.pdb
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\obj\Debug\net6.0\NewProject.genruntimeconfig.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\NewProject\obj\Debug\net6.0\ref\NewProject.dll
