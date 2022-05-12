@@ -1,0 +1,8 @@
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Enum type\bin\Debug\Enum type.exe.config
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Enum type\bin\Debug\Enum type.exe
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Enum type\bin\Debug\Enum type.pdb
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Enum type\obj\Debug\Enum type.csproj.AssemblyReference.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Enum type\obj\Debug\Enum type.csproj.SuggestedBindingRedirects.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Enum type\obj\Debug\Enum type.csproj.CoreCompileInputs.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Enum type\obj\Debug\Enum type.exe
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Enum type\obj\Debug\Enum type.pdb
