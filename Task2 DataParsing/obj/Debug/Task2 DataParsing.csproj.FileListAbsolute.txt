@@ -1,0 +1,8 @@
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Task2 DataParsing\bin\Debug\Task2 DataParsing.exe.config
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Task2 DataParsing\bin\Debug\Task2 DataParsing.exe
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Task2 DataParsing\bin\Debug\Task2 DataParsing.pdb
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Task2 DataParsing\obj\Debug\Task2 DataParsing.csproj.AssemblyReference.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Task2 DataParsing\obj\Debug\Task2 DataParsing.csproj.SuggestedBindingRedirects.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Task2 DataParsing\obj\Debug\Task2 DataParsing.csproj.CoreCompileInputs.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Task2 DataParsing\obj\Debug\Task2 DataParsing.exe
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Task2 DataParsing\obj\Debug\Task2 DataParsing.pdb
