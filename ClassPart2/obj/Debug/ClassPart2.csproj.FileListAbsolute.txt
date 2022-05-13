@@ -1,0 +1,8 @@
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\ClassPart2\bin\Debug\ClassPart2.exe.config
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\ClassPart2\bin\Debug\ClassPart2.exe
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\ClassPart2\bin\Debug\ClassPart2.pdb
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\ClassPart2\obj\Debug\ClassPart2.csproj.AssemblyReference.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\ClassPart2\obj\Debug\ClassPart2.csproj.SuggestedBindingRedirects.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\ClassPart2\obj\Debug\ClassPart2.csproj.CoreCompileInputs.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\ClassPart2\obj\Debug\ClassPart2.exe
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\ClassPart2\obj\Debug\ClassPart2.pdb
