@@ -1,0 +1,8 @@
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Regex_Data_Validation\bin\Debug\Regex_Data_Validation.exe.config
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Regex_Data_Validation\bin\Debug\Regex_Data_Validation.exe
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Regex_Data_Validation\bin\Debug\Regex_Data_Validation.pdb
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Regex_Data_Validation\obj\Debug\Regex_Data_Validation.csproj.AssemblyReference.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Regex_Data_Validation\obj\Debug\Regex_Data_Validation.csproj.SuggestedBindingRedirects.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Regex_Data_Validation\obj\Debug\Regex_Data_Validation.csproj.CoreCompileInputs.cache
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Regex_Data_Validation\obj\Debug\Regex_Data_Validation.exe
+E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\Regex_Data_Validation\obj\Debug\Regex_Data_Validation.pdb
