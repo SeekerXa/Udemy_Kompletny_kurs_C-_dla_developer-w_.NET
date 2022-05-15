@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace ClassPart2
 {
-    internal class ExcelFile  : File
+    internal class ExcelFile : iFile
     {
+
+        public string FileName { get; set; }
+        public int Size { get; set; }
+        public DateTime CreateOn { get; set; }
 
         public ExcelFile(string fileName, int size, DateTime date)
         {
