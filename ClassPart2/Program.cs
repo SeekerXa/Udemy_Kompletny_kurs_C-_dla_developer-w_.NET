@@ -11,12 +11,13 @@ namespace ClassPart2
         static void Main(string[] args)
         {
 
-           ExcelFile excelFile = new ExcelFile("taki",23,DateTime.Now);
+            Shape[] shapes = { new Circle(), new Rectangle(), new Triangle(), };
 
-           PowerPointFile powerFile = new PowerPointFile("taki", 23, DateTime.Now);
+            foreach (Shape shape in shapes)
+            {
+                shape.Draw();
 
-            excelFile.GenerateReport();
-            powerFile.GenerateReport();
+            }
 
         }
     }
