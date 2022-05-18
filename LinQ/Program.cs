@@ -33,35 +33,67 @@ namespace LinQ
 
             List<Person> youngEmployee = new List<Person>();
 
-            foreach (Person employee in employees)
-            {
-                if (employee.GetDateOfBirth() > new DateTime(2000, 1, 1))
-                {
-                       youngEmployee.Add(employee);
-                }
-            }
-            Console.WriteLine("Ilość wyników youngEmploye: "+youngEmployee.Count);
-            Console.WriteLine();
+            //foreach (Person employee in employees)
+            //{
+            //    if (employee.GetDateOfBirth() > new DateTime(2000, 1, 1))
+            //    {
+            //        youngEmployee.Add(employee);
+            //    }
+            //}
+            //Console.WriteLine("Ilość wyników youngEmploye: " + youngEmployee.Count);
+            //Console.WriteLine();
+
+            // Używając LINQ 
+
+            //bool EmployeeIsYoung(Person employee)
+            //{
+            //    return employee.GetDateOfBirth() > new DateTime(2000, 1, 1);
+            //}
+            //youngEmployee = employees.Where(EmployeeIsYoung).ToList();
+
+            ////--------
+            //bool EmployeeIsBob(Person employee)
+            //{
+            //    return employee.FirstName == "Bob";
+            //}
+            //Person bob = youngEmployee.FirstOrDefault();
+
+            //Console.WriteLine($"Ilość wyników youngEmploye: {youngEmployee.Count}\n");
+            //bob.SayHi();
 
 
+            //lambda expression
+             
+            
+            youngEmployee = employees.Where(e => e.GetDateOfBirth() > new DateTime(2000, 1, 1)).ToList();
 
+            //--------
+           
+            Person bob = youngEmployee.FirstOrDefault(e => e.FirstName=="Bob");
 
-
-
-
-
-
-
-
-
-
+            Console.WriteLine($"Ilość wyników youngEmploye: {youngEmployee.Count}\n");
+            bob.SayHi();
 
 
         }
 
 
 
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
 
 
 }

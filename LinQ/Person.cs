@@ -38,12 +38,12 @@ namespace LinQ
                 dateOfBirth = date;
         }
 
-            public DateTime GetDateOfBirth() => dateOfBirth;
+        public DateTime GetDateOfBirth() => dateOfBirth;
 
-            public void SayHi()
-            {
-                Console.WriteLine($"Hi,I'm{FirstName}{LastName},{GetDateOfBirth()}");
-            }
-        
+        public void SayHi()
+        {
+            Console.WriteLine($"Hi,I'm {FirstName}{LastName}, {GetDateOfBirth()}");
+        }
+
     }
 }
