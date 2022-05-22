@@ -8,14 +8,20 @@ namespace ParsingNegative
 {
     internal class Program
     {
-        public static int TryNegativeParsing(string input,out int result)
+        public static bool TryParseToNegativeInt(string input, out int result)
         {
             if (int.TryParse(input, out result))
             {
-
+                if (result < 0)
+                {
+                    return true;
+                }
+                else return false;
             }
             else
             {
+                result = default;
+                return false;
 
             }
 
@@ -23,7 +29,7 @@ namespace ParsingNegative
         }
 
         public static bool IsNegative(int x) => x < 0;
-    
+
 
 
 
@@ -31,8 +37,12 @@ namespace ParsingNegative
         static void Main(string[] args)
         {
 
-
-            TryNegativeParsing("-22");
+            int inpytValue;
+            while (!TryParseToNegativeInt(Console.ReadLine(),out inpytValue))
+            {
+                     Console.WriteLine("insert negative number!");
+            }
+            Console.WriteLine($"Inserted negative number = {inpytValue}");
         }
-    }                                                                
+    }                                                       
 }
