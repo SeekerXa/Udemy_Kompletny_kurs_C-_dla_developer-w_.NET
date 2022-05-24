@@ -63,9 +63,12 @@ namespace KataReverse
 
         public static string ReverseWords(string str)
         {
+            var split = str.Split(' ');
+            var reverse = split.Reverse();
+            var result = string.Join(' ', reverse);
 
 
-            return Join(Reverse(Split(str , ' ')),' ');
+            return result;
         }
     }
 }
