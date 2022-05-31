@@ -29,7 +29,7 @@ namespace TryCatch_Using
             string text = "Something!";
             byte[] temp = uniencoding.GetBytes(text);
 
-            //"Using" can be used for any class that implements the "IDisposable" interface !!!!!! 
+            //"Using" can be used for any class that implements the "IDisposable" interface !!!!!
 
 
             //That u can do by  "using"
