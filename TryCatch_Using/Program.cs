@@ -33,7 +33,7 @@ namespace TryCatch_Using
 
 
             //That u can do by  "using"
-            var writeFileStream = new FileStream(filePath, FileMode.Open))
+            var writeFileStream = new FileStream(filePath, FileMode.Open);
             try
             {
                 // writeFileStream.Write(temp, 0, temp.Length);
