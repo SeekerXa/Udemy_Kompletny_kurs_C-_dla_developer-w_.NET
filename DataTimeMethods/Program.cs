@@ -3,7 +3,7 @@ using System;
 ;
 Console.WriteLine("Hello, World!");
 //DataTimeModification();
-DateTimeFormatting();
+//DateTimeFormatting();
 
 
 
@@ -33,6 +33,6 @@ static void DateTimeFormatting()
     Console.WriteLine(now.ToLongDateString());
     Console.WriteLine(now.ToString("g"));
     Console.WriteLine(now.ToString("G"));
-    Console.WriteLine(now.ToString("yyyy-MM-dd hh:mm:ss"));  //
+    Console.WriteLine(now.ToString("yyyy-MM-dd hh:mm:ss")); 
 
 }
