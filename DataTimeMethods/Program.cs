@@ -4,7 +4,7 @@ using System;
 Console.WriteLine("Hello, World!");
 //DataTimeModification();
 //DateTimeFormatting();
-
+TimeNeasurement();
 
 
 
@@ -34,5 +34,27 @@ static void DateTimeFormatting()
     Console.WriteLine(now.ToString("g"));
     Console.WriteLine(now.ToString("G"));
     Console.WriteLine(now.ToString("yyyy-MM-dd hh:mm:ss")); 
+
+}
+
+
+static void TimeMeasurement()
+{
+    Console.WriteLine("what is 2 +2 ?");
+    Console.WriteLine("A) 4");
+    Console.WriteLine("B) 3");
+    Console.WriteLine("C) 1");
+    Console.WriteLine("D) 6");
+
+    DateTime start = DateTime.Now;
+
+    string userAswer = Console.ReadLine();
+
+    DateTime end = DateTime.Now;
+
+    TimeSpan responseTime = end - start;
+
+    Console.WriteLine($" REsponse took you {responseTime.TotalSeconds} seconds");
+
 
 }
