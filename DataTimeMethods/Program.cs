@@ -58,3 +58,11 @@ static void TimeMeasurement()
 
 
 }
+
+
+static void DateTimeHelpers()
+{
+    int daysInFeb2021 = DateTime.DaysInMonth(2021, 2);    //   28
+    bool isLeapYear = DateTime.IsLeapYear(2021);               //    false
+     
+}
