@@ -20,8 +20,8 @@ namespace LINQDeeperLook
             string csvPath = @"E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\LINQDeeperLook\Data\googleplaystore1.csv";
             var googleApps = LoadGoogleAps(csvPath);
 
-            Display(googleApps);
-
+            // Display(googleApps);
+            GetData(googleApps);
 
         }
 
@@ -30,8 +30,9 @@ namespace LINQDeeperLook
             foreach (var googleApp in googleApps)
             {
                 Console.WriteLine(googleApp);
-            }
-
+            }                                            
+            Console.WriteLine("..................................");
+                                                        
         }
         static void Display(GoogleApp googleApp)
         {
@@ -49,6 +50,22 @@ namespace LINQDeeperLook
             }
 
         }
+
+        static void GetData(IEnumerable<GoogleApp> googleApps)
+        {
+            var highRatedApp= googleApps.Where(e => e.Rating > 4.6);
+            var highRatedAppBeauty = googleApps.Where(e => e.Rating > 4.6 && e.Category == Category.BEAUTY);
+            var first = highRatedAppBeauty.FirstOrDefault(e => e.Reviews < 50);
+            var single = highRatedAppBeauty.SingleOrDefault(e => e.Reviews < 300);
+            Display(highRatedAppBeauty);
+       
+            Display(first);
+
+            Display(single);
+        }
+
+
+
 
     }
     //pobieranie danych
