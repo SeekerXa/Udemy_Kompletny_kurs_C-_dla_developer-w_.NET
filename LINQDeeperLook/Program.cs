@@ -20,9 +20,10 @@ namespace LINQDeeperLook
             string csvPath = @"E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\LINQDeeperLook\Data\googleplaystore1.csv";
             var googleApps = LoadGoogleAps(csvPath);
 
-            // Display(googleApps);
+            //Display(googleApps);
             //GetData(googleApps);
-            projectData(googleApps);
+            //projectData(googleApps);
+            DivideData(googleApps);
 
         }
 
@@ -90,7 +91,7 @@ namespace LINQDeeperLook
             Console.WriteLine(string.Join("\n", genres));
 
             //typy anonimowe
-            var anonymousDtos = highRatedAppBeauty.Select(e => new 
+            var anonymousDtos = highRatedAppBeauty.Select(e => new
             {
                 e.Name,
                 e.Reviews,
@@ -100,6 +101,26 @@ namespace LINQDeeperLook
             {
                 Console.WriteLine($"{e.Name} : {e.Reviews} : {e.Category}");
             }
+        }
+
+
+        static void DivideData(IEnumerable<GoogleApp> googleApps)
+        {
+            var highRatedAppBeauty = googleApps.Where(e => e.Rating > 4.6 && e.Category == Category.BEAUTY);
+            Display(highRatedAppBeauty);
+
+            //var first5highRatedAppBeauty = new List<GoogleApp>();
+            //foreach (var e in highRatedAppBeauty)
+            //{
+            //     first5highRatedAppBeauty.Add(e);
+            //    if (first5highRatedAppBeauty.Count == 5) break;
+            //}
+            //var first5highRatedAppBeauty = highRatedAppBeauty.Take(5);
+            //var first5highRatedAppBeauty = highRatedAppBeauty.TakeWhile(E => E.Reviews >=1000);
+
+
+            var skipFirst5highRatedAppBeauty = highRatedAppBeauty.Skip(5);
+            Display(skipFirst5highRatedAppBeauty);
         }
 
 
