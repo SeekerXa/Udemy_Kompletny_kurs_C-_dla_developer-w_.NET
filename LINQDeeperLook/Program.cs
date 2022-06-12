@@ -21,7 +21,8 @@ namespace LINQDeeperLook
             var googleApps = LoadGoogleAps(csvPath);
 
             // Display(googleApps);
-            GetData(googleApps);
+            //GetData(googleApps);
+            projectData(googleApps);
 
         }
 
@@ -30,9 +31,9 @@ namespace LINQDeeperLook
             foreach (var googleApp in googleApps)
             {
                 Console.WriteLine(googleApp);
-            }                                            
+            }
             Console.WriteLine("..................................");
-                                                        
+
         }
         static void Display(GoogleApp googleApp)
         {
@@ -53,18 +54,53 @@ namespace LINQDeeperLook
 
         static void GetData(IEnumerable<GoogleApp> googleApps)
         {
-            var highRatedApp= googleApps.Where(e => e.Rating > 4.6);
+            var highRatedApp = googleApps.Where(e => e.Rating > 4.6);
             var highRatedAppBeauty = googleApps.Where(e => e.Rating > 4.6 && e.Category == Category.BEAUTY);
             var first = highRatedAppBeauty.FirstOrDefault(e => e.Reviews < 50);
             var single = highRatedAppBeauty.SingleOrDefault(e => e.Reviews < 300);
             Display(highRatedAppBeauty);
-       
+
             Display(first);
 
             Display(single);
         }
 
+        public static void projectData(IEnumerable<GoogleApp> googleApps)
+        {
+            var highRatedAppBeauty = googleApps.Where(e => e.Rating > 4.6 && e.Category == Category.BEAUTY);
+            Display(highRatedAppBeauty);
+            var highRatedAppBeautyNames = highRatedAppBeauty.Select(e => e.Name);
 
+            //Console.WriteLine(string.Join(",\n", highRatedAppBeautyNames));
+
+            //var dtos = highRatedAppBeauty.Select(e => new GoogleAppDto()
+            //{
+            //    Name = e.Name,
+            //    Reviews = e.Reviews
+            //});
+
+            //foreach(GoogleAppDto dto in dtos)
+            //{
+            //     Console.WriteLine($"{dto.Name} : {dto.Reviews}");
+            //}
+
+            //kolekcje listy
+            var genresList = highRatedAppBeauty.Select(e => e.Genres);
+            var genres = highRatedAppBeauty.SelectMany(e => e.Genres);
+            Console.WriteLine(string.Join("\n", genres));
+
+            //typy anonimowe
+            var anonymousDtos = highRatedAppBeauty.Select(e => new 
+            {
+                e.Name,
+                e.Reviews,
+                e.Category
+            });
+            foreach (var e in anonymousDtos)
+            {
+                Console.WriteLine($"{e.Name} : {e.Reviews} : {e.Category}");
+            }
+        }
 
 
     }
