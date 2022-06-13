@@ -23,10 +23,22 @@ namespace LINQDeeperLook
             //Display(googleApps);
             //GetData(googleApps);
             //projectData(googleApps);
-            DivideData(googleApps);
+            //DivideData(googleApps);
+            OrderData(googleApps);
+
 
         }
 
+        static void OrderData(IEnumerable<GoogleApp> googleApps)
+        {
+            //OrderByDescending
+            //OrderBy
+            //ThenBy
+            var highRatedAppBeauty = googleApps.Where(e => e.Rating > 4.4 && e.Category == Category.BEAUTY).
+                OrderByDescending(e => e.Rating).
+                ThenBy(e=>e.Name);
+            Display(highRatedAppBeauty);    
+        }
         static void Display(IEnumerable<GoogleApp> googleApps)
         {
             foreach (var googleApp in googleApps)
