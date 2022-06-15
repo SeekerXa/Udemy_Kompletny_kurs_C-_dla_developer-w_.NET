@@ -44,6 +44,16 @@ namespace LINQDeeperLook
             var setB = googleApps.Where(e => e.Name.Contains("Pro") && e.Rating > 4.6 && e.Reviews > 10000);
             Display(setA);
             Display(setB);
+
+
+            var appIntersect = setA.Union(setB);
+            Display(appIntersect);
+            var appIntersect1 = setA.Intersect(setB);
+            Display(appIntersect1);
+            var appIntersect2 = setA.Except(setB);
+            Display(appIntersect2);
+
+
         }
 
 
