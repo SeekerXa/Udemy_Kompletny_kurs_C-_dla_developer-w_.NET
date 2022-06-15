@@ -15,6 +15,7 @@ namespace LINQDeeperLook
 
     class Program
     {
+
         static void Main(string[] args)
         {
             string csvPath = @"E:\Projects\Learning\C#\Udemy_Kompletny_kurs_C-_dla_developer-w_.NET\LINQDeeperLook\Data\googleplaystore1.csv";
@@ -24,10 +25,28 @@ namespace LINQDeeperLook
             //GetData(googleApps);
             //projectData(googleApps);
             //DivideData(googleApps);
-            OrderData(googleApps);
-
+            //OrderData(googleApps);
+            DataSetOperation(googleApps);
 
         }
+
+
+        static void DataSetOperation(IEnumerable<GoogleApp> googleApps)
+        {   //Distinct() - unique
+            //Union - all unique elements of two group  (x(x)x)
+            //Intersect - part of A = B  ( (x) )
+            //Except - only unique A (x() )
+            var paidAppCategories = googleApps.Where(e => e.Type == Type.Paid)
+                .Select(a => a.Category).Distinct();
+            Console.WriteLine($"Paid apps categories: {string.Join(", ", paidAppCategories)}");
+
+            var setA = googleApps.Where(e => e.Rating > 4.7 && e.Type == Type.Paid && e.Reviews > 1000);
+            var setB = googleApps.Where(e => e.Name.Contains("Pro") && e.Rating > 4.6 && e.Reviews > 10000);
+            Display(setA);
+            Display(setB);
+        }
+
+
 
         static void OrderData(IEnumerable<GoogleApp> googleApps)
         {
@@ -36,8 +55,8 @@ namespace LINQDeeperLook
             //ThenBy
             var highRatedAppBeauty = googleApps.Where(e => e.Rating > 4.4 && e.Category == Category.BEAUTY).
                 OrderByDescending(e => e.Rating).
-                ThenBy(e=>e.Name);
-            Display(highRatedAppBeauty);    
+                ThenBy(e => e.Name);
+            Display(highRatedAppBeauty);
         }
         static void Display(IEnumerable<GoogleApp> googleApps)
         {
