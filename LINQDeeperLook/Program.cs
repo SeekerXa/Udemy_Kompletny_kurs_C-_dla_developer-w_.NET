@@ -26,10 +26,22 @@ namespace LINQDeeperLook
             //projectData(googleApps);
             //DivideData(googleApps);
             //OrderData(googleApps);
-            DataSetOperation(googleApps);
-
+            //DataSetOperation(googleApps);
+            DataVeryfication(googleApps);
         }
 
+        static void DataVeryfication(IEnumerable<GoogleApp> googleApps)
+        {
+            //All return bool all need to by true  (checking all group)
+            //Any return bool when one or more (checking all group)
+            var allWetherCat = googleApps.Where(a => a.Category == Category.WEATHER).All(e=> e.Reviews >11);
+
+            Console.WriteLine(allWetherCat);
+
+            var anyWetherCat = googleApps.Where(a => a.Category == Category.WEATHER).Any(e => e.Reviews > 2000000);
+            Console.WriteLine(anyWetherCat);
+            //Display();
+        }
 
         static void DataSetOperation(IEnumerable<GoogleApp> googleApps)
         {   //Distinct() - unique
