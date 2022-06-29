@@ -27,8 +27,28 @@ namespace LINQDeeperLook
             //DivideData(googleApps);
             //OrderData(googleApps);
             //DataSetOperation(googleApps);
-            DataVeryfication(googleApps);
+            //DataVeryfication(googleApps);
+            //GroupData(googleApps);
+
         }
+
+
+        static void GroupData(IEnumerable<GoogleApp> googleApps)
+        {
+
+            var categoryGroup = googleApps.GroupBy(g =>new { g.Category, g.Type });
+
+            //var categoryGroup =googleApps.GroupBy(g => g.Category);
+
+            foreach(var group in categoryGroup)
+            {
+                
+                Console.WriteLine($"Displaing elements for group {group.Key.Category}, {group.Key.Type}");
+                Display(group.ToList());
+            }
+
+        }
+
 
         static void DataVeryfication(IEnumerable<GoogleApp> googleApps)
         {
