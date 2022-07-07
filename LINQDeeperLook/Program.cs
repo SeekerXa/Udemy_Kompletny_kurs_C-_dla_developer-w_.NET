@@ -29,9 +29,20 @@ namespace LINQDeeperLook
             //DataSetOperation(googleApps);
             //DataVeryfication(googleApps);
             //GroupData(googleApps);
+            GroupDataOperations(googleApps);
+        }
+        static void GroupDataOperations(IEnumerable<GoogleApp> googleApps)
+        {
+            // Average() - 
+
+            var categoryGroup = googleApps.GroupBy(e => e.Category);
+            foreach(var group in categoryGroup)
+            {
+
+            }
+         
 
         }
-
 
         static void GroupData(IEnumerable<GoogleApp> googleApps)
         {
