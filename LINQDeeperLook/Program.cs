@@ -35,25 +35,40 @@ namespace LINQDeeperLook
         {
             // Average() - 
 
-            var categoryGroup = googleApps.GroupBy(e => e.Category);
-            foreach(var group in categoryGroup)
+            var categoryGroup = googleApps.GroupBy(e => e.Category).
+                Where(g => g.Min(a => a.Reviews) >= 10);
+            foreach (var group in categoryGroup)
             {
+                var averageReviews = group.Average(e => e.Reviews);
+                var minReviews = group.Min(e => e.Reviews);
+                var maxReviews = group.Max(e => e.Reviews);
+                var sumReviews = group.Sum(e => e.Reviews);
 
+                var allAppsRateTreeGroup = group.All(e => e.Rating > 3.0);   
+
+                Console.WriteLine($"Category: {group.Key}");
+                Console.WriteLine($"averageReviews: {averageReviews}");
+                Console.WriteLine($"minReviews: {minReviews}");
+                Console.WriteLine($"maxReviews: {maxReviews}");
+                Console.WriteLine($"sumReviews: {sumReviews}");
+                Console.WriteLine($"allAppsRateTreeGroup: {allAppsRateTreeGroup}");
+                Console.WriteLine();
             }
-         
+
+
 
         }
 
         static void GroupData(IEnumerable<GoogleApp> googleApps)
         {
 
-            var categoryGroup = googleApps.GroupBy(g =>new { g.Category, g.Type });
+            var categoryGroup = googleApps.GroupBy(g => new { g.Category, g.Type });
 
             //var categoryGroup =googleApps.GroupBy(g => g.Category);
 
-            foreach(var group in categoryGroup)
+            foreach (var group in categoryGroup)
             {
-                
+
                 Console.WriteLine($"Displaing elements for group {group.Key.Category}, {group.Key.Type}");
                 Display(group.ToList());
             }
@@ -65,7 +80,7 @@ namespace LINQDeeperLook
         {
             //All return bool all need to by true  (checking all group)
             //Any return bool when one or more (checking all group)
-            var allWetherCat = googleApps.Where(a => a.Category == Category.WEATHER).All(e=> e.Reviews >11);
+            var allWetherCat = googleApps.Where(a => a.Category == Category.WEATHER).All(e => e.Reviews > 11);
 
             Console.WriteLine(allWetherCat);
 
