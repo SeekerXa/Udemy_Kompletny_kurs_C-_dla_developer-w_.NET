@@ -1,10 +1,10 @@
 ﻿
 namespace DataConnecting
 {
-    public class Adress
+    public class Address
     {
         public int Id { get; set; }
-        public string PersonId { get; set; }
+        public int PersonId { get; set; }
         public string Streat { get; set; }
         public string City { get; set; }
 
